@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Varta:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Antic</title>
+</head>
+
+<body>
+  <!--   SPRITE -->
+  <svg style="display: none;">
+
+    <symbol id="scrol-down" viewBox="0 0 50 50">
+      <g>
+        <path
+          d="M17.2929 22.2071C16.9024 21.8166 16.9024 21.1834 17.2929 20.7929C17.6834 20.4024 18.3166 20.4024 18.7071 20.7929L25 27.0858L31.2929 20.7929C31.6834 20.4024 32.3166 20.4024 32.7071 20.7929C33.0976 21.1834 33.0976 21.8166 32.7071 22.2071L25.7071 29.2071C25.3166 29.5976 24.6834 29.5976 24.2929 29.2071L17.2929 22.2071Z" />
+      </g>
+    </symbol>
+    <symbol id="logo" viewBox="0 0 92 29">
+      <g>
+        <path
+          d="M0.0519962 23.196C0.0519962 26.902 2.704 28.874 5.798 28.874C8.586 28.874 10.592 27.208 11.476 26.222V27.14C11.476 28.568 11.884 28.874 13.414 28.874C14.774 28.874 16.78 28.568 17.562 28.364V26.46H15.726V16.056C15.726 11.126 14.06 9.188 8.858 9.188C5.016 9.188 1.616 11.092 0.833996 11.772L1.888 13.948C2.976 13.438 5.05 12.418 7.634 12.418C10.558 12.418 11.204 13.54 11.204 16.158V16.94C5.05 16.974 0.0519962 18.878 0.0519962 23.196ZM7.974 26.052C6.274 26.052 5.118 24.93 5.118 22.72C5.118 20.68 6.92 19.014 11.204 19.014V24.59C10.32 25.372 8.96 26.052 7.974 26.052ZM23.5878 26.154L21.6158 26.46V28.5H30.4898V26.46L28.4498 26.154V13.778C29.4018 13.064 30.9998 12.112 32.5978 12.112C34.9438 12.112 35.4878 13.438 35.4878 16.804V26.188L33.6518 26.46V28.5H42.4238V26.46L40.3498 26.188V16.804C40.3498 11.364 39.0238 9.222 34.9098 9.222C32.1218 9.222 29.4018 10.65 27.9738 11.976L28.0078 11.16V9.834L27.1578 9.154H27.0558L21.4118 9.868V12.214L23.5878 12.826V26.154ZM52.5384 28.806C54.9864 28.806 57.7404 27.82 58.8964 26.936L58.2504 25.032C57.5364 25.338 56.1764 25.678 54.9524 25.678C53.3884 25.678 53.2184 25.406 53.2184 21.768V12.214H58.3864V9.596H53.1844L53.0484 4.598H50.3284C50.0564 5.55 49.5804 7.284 49.2064 8.134C48.9344 8.882 48.6284 9.358 48.2204 9.664C47.7104 9.902 46.7924 10.208 46.1464 10.446V12.214H48.3564V24.692C48.3564 27.616 49.7504 28.806 52.5384 28.806ZM66.7513 6.502H66.7853C68.7913 6.502 69.8793 5.278 69.8793 3.51C69.8793 2.15 69.0293 0.959998 67.0913 0.959998C65.2213 0.959998 64.0993 2.252 64.0993 3.952C64.0993 5.38 65.0513 6.502 66.7513 6.502ZM64.9493 26.154L62.5693 26.46V28.5H72.0553V26.46L69.7773 26.188V9.834L68.8253 9.154H68.7573L62.5353 9.902V12.18L64.9493 12.826V26.154ZM76.0504 19.218C76.0504 24.726 78.7704 28.874 84.7884 28.874C87.8824 28.874 90.4664 27.31 91.4184 26.29L90.6364 24.522C89.5824 25.202 87.9844 25.916 85.8764 25.916C83.0884 25.916 81.1504 23.332 81.1504 18.198C81.1844 13.268 82.8164 11.33 85.2304 11.33C86.1484 11.33 87.0664 11.534 87.2364 12.214L88.0864 15.954H91.0444L91.2484 10.14C90.1944 9.936 88.5284 9.12 85.7064 9.12C79.7224 9.12 76.0164 13.302 76.0504 19.218Z" />
+      </g>
+    </symbol>
+
+  </svg>
+
+  <div class="wrapper">
+    <div class="header-bg">
+      <header class="hero">
+        <div class="hero__container">
+          <div class="hero__inner">
+            <a class="logo" href="#">
+              <svg class="logo__icon logo__icon--white">
+                <use xlink:href="#logo"></use>
+              </svg>
+            </a>
+            <nav class="navbar">
+              <div class="navbar__body burger-menu">
+                <ul class="navbar__list">
+                  <li class="navbar__item">
+                    <a class="navbar__link" href="#">Products</a>
+                  </li>
+                  <li class="navbar__item">
+                    <a class="navbar__link" href="#">Rooms</a>
+                  </li>
+                  <li class="navbar__item">
+                    <a class="navbar__link" href="#">Services</a>
+                  </li>
+                  <li class="navbar__item">
+                    <a class="navbar__link" href="#">Inspirations</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <a class="hero__contact contact-hero" href="#">
+              <img class="contact-hero__img" src="assets/images/icon/contact.svg" alt="contact">
+            </a>
+            <div class="hero__img">
+              <img class="hero__img-bg" src="assets/images/hero-img.jpg" alt="">
+            </div>
+            <button class="icon-menu" type="submit">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <section class="main">
+        <div class="main__container">
+          <div class="main__content content-main">
+            <div class="content-main__subtext balancing">HOME DESIGN</div>
+            <h1 class="content-main__title balancing">Elegance for Interiors & Exteriors</h1>
+            <div class="content-main__text balancing">
+              <p>We provide everyone with modern,
+                trendy, quality furniture</p>
+            </div>
+            <div class="content-main__scrol">
+              <a class="content-main__item" href="#">
+                <svg class="content-main__icon">
+                  <use xlink:href="#scrol-down"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="suggested">
+      <div class="suggested__container">
+        <h3 class="suggested__title">Find your room</h3>
+        <div class="suggested__inner">
+          <div class="suggested__text">
+            <p>Dining room, bedroom, bathroom or office. Find what you need</p>
+          </div>
+          <div class="suggested__column suggested__column--hidden">
+            <a class="suggested__column-link" href="#">
+              <img class="suggested__column-img" src="assets/images/suggested/01.jpg" alt="bedroom">
+            </a>
+            <div class="suggested__column-new">New arrivals</div>
+            <h3 class="suggested__column-title">Bedroom</h3>
+          </div>
+          <div class="suggested__column">
+            <a class="suggested__column-link" href="#">
+              <img class="suggested__column-img" src="assets/images/suggested/02.jpg" alt="bedroom">
+            </a>
+            <div class="suggested__column-new">New arrivals</div>
+            <h3 class="suggested__column-title">Living<br>room</h3>
+          </div>
+        </div>
+        <div class="suggested__box">
+          <div class="suggested__data">01 / 05</div>
+          <div class="suggested__slider">
+            <a class="suggested__link" href="#">
+              Next
+              <img class="ho" src="assets/images/icon/Arr-Right.svg" alt="arrow right">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feature">
+      <div class="feature__container">
+        <div class="feature__inner">
+          <h3 class="feature__title-into">We stay by your side to design your projects</h3>
+          <a class="feature__link link-global" href="#">
+            Find out more
+          </a>
+        </div>
+        <div class="feature__items">
+          <article class="feature__item">
+            <h5 class="feature__title">Our Advices</h5>
+            <div class="feature__text">
+              What if you took advantage of this rather special period to rethink your
+              interior? You spend more time at home so you might as well feel good there.
+            </div>
+          </article>
+          <article class="feature__item">
+            <h5 class="feature__title">Click and Collect</h5>
+            <div class="feature__text">
+              Adapted and contactless. Free from € 200 of purchases in stores offering the service.
+            </div>
+          </article>
+          <article class="feature__item">
+            <h5 class="feature__title">Conception Service</h5>
+            <div class="feature__text">
+              Personalized service with an expert advisor for your interior and exterior decoration or layout projects.
+            </div>
+          </article>
+          <article class="feature__item">
+            <h5 class="feature__title">Installation Service</h5>
+            <div class="feature__text">
+              Our furniture packaged in flat packs are designed for easy assembly. But you can call on our partner.
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="trends">
+      <div class="trends__container">
+        <div class="trends__newsletter">
+          <div class="trends__inner">
+            <h2 class="trends__title">Be aware of the latest trends</h2>
+            <div class="trends__advice">Stay informed of new trends, but also of our various offers.</div>
+            <a class="trends__link link-global" href="#">
+              Learn more
+            </a>
+          </div>
+          <form class="subscribe" action="#">
+            <input class="subscribe__email" type="email" required placeholder="email@address.com">
+            <button class="subscribe__btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="trends__column trends__column-slider">
+          <div class="trends__slider">
+            <figure class="trends__group">
+              <img class="trends__slider-img" src="assets/images/trends/01.jpg" alt="furniture">
+              <div class="trends__figcaption">Chair</div>
+            </figure>
+            <figure class="trends__group">
+              <img class="trends__slider-img" src="assets/images/trends/02.jpg" alt="furniture">
+              <div class="trends__figcaption">Cooked</div>
+            </figure>
+            <figure class="trends__group">
+              <img class="trends__slider-img" src="assets/images/trends/03.jpg" alt="furniture">
+              <div class="trends__figcaption">Living room</div>
+            </figure>
+            <figure class="trends__group">
+              <img class="trends__slider-img" src="assets/images/trends/04.jpg" alt="furniture">
+              <div class="trends__figcaption">Tables</div>
+            </figure>
+          </div>
+          <div class="trends__info">
+            <h3 class="trends__title-info">Inspirations</h3>
+            <p class="trends__text">
+              Our experts are keen to stay on top of trends in order to offer you new inspirations
+              for your interior and exterior every day. Remember that to inspire you we have to inspire ourselves and we
+              want to share that with you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__main main-footer">
+        <div class="main-footer__container">
+          <div class="main-footer__column main-footer__column--align">
+            <a class="logo" href="#">
+              <svg class="main-footer__icon logo__icon">
+                <use xlink:href="#logo"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="main-footer__column">
+            <div class="main-footer__label">Products</div>
+            <nav class="main-footer__menu menu-footer">
+              <ul class="menu-footer__list">
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">Furniture</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">Decoration</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">Storage</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">Baby and child</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">Connected home</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="main-footer__column">
+            <div class="main-footer__label">Rooms</div>
+            <nav class="main-footer__menu menu-footer">
+              <ul class="menu-footer__list">
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">Living room</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">Dining room</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">Cooked</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">Bedroom</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">Bathroom</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">Office</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">Laundry</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">Garage</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="main-footer__column">
+            <div class="main-footer__label">Services</div>
+            <nav class="main-footer__menu menu-footer">
+              <ul class="menu-footer__list">
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">Click and collect</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">Conception</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">Installation</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">Advices</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">Gift card</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="main-footer__column">
+            <div class="main-footer__label">About</div>
+            <nav class="main-footer__menu menu-footer">
+              <ul class="menu-footer__list">
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">Our story</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">Our stores</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">Our partners</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="main-footer__column main-footer__column">
+            <div class="main-footer__label">We respect our planet</div>
+            <a class="main-footer__nexus" href="#">
+              <img src="assets/images/footer/01.jpg" alt="furniture">
+            </a>
+            <div class="main-footer__text">
+              <p>
+                We’re taking positive steps to reduce our impact on the planet. For us, that means retailing
+                responsibly.
+              </p>
+            </div>
+            <a class="main-footer__link link-global" href="#">
+              Learn more
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom bottom-footer">
+        <div class="bottom-footer__social social">
+          <a class="social__link" href="#" target="_blank">
+            <img class="social__img" src="assets/images/social/facebook.svg" alt="facebook">
+          </a>
+          <a class="social__link" href="#" target="_blank">
+            <img class="social__img" src="assets/images/social/twitter.svg" alt="twitter">
+          </a>
+          <a class="social__link" href="#" target="_blank">
+            <img class="social__img" src="assets/images/social/linkedin.svg" alt="linkedin">
+          </a>
+          <a class="social__link" href="#" target="_blank">
+            <img class="social__img" src="assets/images/social/instagram.svg" alt="instagram">
+          </a>
+        </div>
+        <div class="bottom-footer__container">
+          <div class="bottom-footer__copy">© 2021 Agence Dnd</div>
+          <div class="bottom-footer__legals">
+            <a class="bottom-footer__link" href="#" target="_blank">Privacy policy</a>
+            <a class="bottom-footer__link" href="#" target="_blank">Term of service</a>
+            <a class="bottom-footer__link" href="#" target="_blank">Language</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
